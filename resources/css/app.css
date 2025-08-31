@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animate-ping-once {
+    animation: ping-once 0.5s ease-in-out 1;
+}
+@keyframes ping-once {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.addcart-overlay { pointer-events: none; }
+.addcart-overlay.show { opacity: 0.3; }
